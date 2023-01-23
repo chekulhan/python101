@@ -46,3 +46,18 @@ a = sumar4(6, 7)
 print(type(a))
 print(a)
 
+
+# ámbito, alcance o scope de las variables
+x = "Hola GLOBAL" # variable global
+
+def mensaje():
+  y = "mundo"
+  x = "Hola LOCAL"
+  print(y)
+  print(x)
+
+print(x)
+#print(y) # error
+mensaje()
+
+# TO DO __main__ function
