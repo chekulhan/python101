@@ -20,9 +20,10 @@ print("fin de programa")
 
 # Al ejecutar el programa, verás un prompt interactive de >>(Pdb) donde puedes intoducir comandos para inspeccionar las variables 
 # Preguntas:
-# En el prompt interactivo de Pbd, qué resultado consigues con:
+# En el prompt interactivo de Pbd, qué resultado consigues con (recordar que "a" es una variable):
 # >> (Pbd) w
 # >> (Pbd) n
 # >> (Pbd) w
 # >> (Pbd) c
 # >> (Pbd) print(a)
+# >> (Pbd) p a == 1
