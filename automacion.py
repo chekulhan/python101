@@ -27,3 +27,13 @@ except PermissionError:
 # For other errors
 except:
     print("Error occurred while copying file.")
+
+  
+# RESPUESTA
+import os
+
+directorio = "nuevo_directorio"
+path = os.getcwd()
+path = os.path.join(path, directorio) 
+
+os.mkdir(path)
