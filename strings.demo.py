@@ -50,7 +50,7 @@ for i in texto:
 
 # descifrar
 for i in lista:
-    print(chr(i))
+    print(chr(i), end = " ")
     
 # RETO respuesta - Amazon sistema de registro
 # Palabras para excluir de la contraseña. Hay mejoras formas de hacer eso, con una lista, por ejemplo....
