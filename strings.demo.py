@@ -6,6 +6,8 @@ print(len(texto))
 print(texto.capitalize())
 # mayúsculos - lo opuesto en lower()
 print(texto.upper())
+# multi-linea con \n
+print("programazioan\ngustatzen\nzait")
 # substring
 print(texto[13:22])
 # los primeros 10 caracteres
@@ -32,10 +34,25 @@ if BUSCAR in texto:
 else:
     print("No encontrado")
 
-    
-    
-# reto respuesta - Amazon sistema de registro
 
+# recibe un carácter y devuelve su representación en código unicode
+print(ord("ñ"))
+# recibe un número y devuelve su representación como carácter
+print(chr(241))
+
+##########################################
+# RETO respuesta - encriptar y descifrar
+texto = "Texto para encriptar"
+lista = []
+for i in texto:
+    print(ord(i))
+    lista.append(ord(i))
+
+# descifrar
+for i in lista:
+    print(chr(i))
+    
+# RETO respuesta - Amazon sistema de registro
 # Palabras para excluir de la contraseña. Hay mejoras formas de hacer eso, con una lista, por ejemplo....
 EXCLUDE1 = "password"
 EXCLUDE2 = "contraseña"
