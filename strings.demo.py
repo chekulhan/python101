@@ -44,13 +44,17 @@ print(chr(241))
 # RETO respuesta - encriptar y descifrar
 texto = "Texto para encriptar"
 lista = []
-for i in texto:
-    print(ord(i))
-    lista.append(ord(i))
 
-# descifrar
-for i in lista:
-    print(chr(i), end = " ")
+# usar lista.append() para agregar los números a la lista
+for i in texto:
+    lista.append(ord(i) + 10)
+
+# mostrar la lista de la cadena cifrado
+
+# ahora descifra la lista - los números unicode de cada carácter esta en la lista
+for j in range(0, len(lista)):
+   print(chr(lista[j]-10), end=" ")
+
     
 # RETO respuesta - Amazon sistema de registro
 # Palabras para excluir de la contraseña. Hay mejoras formas de hacer eso, con una lista, por ejemplo....
