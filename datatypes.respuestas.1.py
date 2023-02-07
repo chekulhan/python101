@@ -21,3 +21,10 @@ print(f"El total de su compra de pantalones es {currency}.")
 #NOTAS:
 # desired_representation = "symbol{:,}".format(my_currency)
 # Historias de Usuario: «Como <rol> quiero <funcionalidad> para <cuál es el beneficio que obtengo con ello>»
+
+
+
+# Actividades de clase
+accion = 3.0172
+print(accion)
+print(int(accion))
