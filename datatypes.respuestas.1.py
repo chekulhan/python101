@@ -1,3 +1,9 @@
+# Formatear con %
+a = 433.32
+b = 0.2121
+print("Completed in %d %.2f" %(a,b))
+
+# Formatear con f
 a = 32.5432
 print(f'Completed in {a:.2f}')
 
