@@ -1,3 +1,6 @@
+a = 32.5432
+print(f'Completed in {a:.2f}')
+
 # Calcular IVA de un producto
 # Comprobar tus resultados con https://www.impulsa-empresa.es/calculadora-iva/
 
