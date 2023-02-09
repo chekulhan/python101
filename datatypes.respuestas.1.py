@@ -1,3 +1,12 @@
+# Mutable / inmutable
+inflacion = 3.765
+x = id(inflacion)
+inflacion = 3.876
+y = id(inflacion)
+print(x==y)
+
+
+
 # Formatear con %
 a = 433.32
 b = 0.2121
