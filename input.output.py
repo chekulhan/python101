@@ -27,7 +27,7 @@ To convert temperatures in degrees Celsius to Fahrenheit, multiply by 1.8 (or 9/
 Example: (30°C x 1.8) + 32 = 86°F
 """
 fahrenheit = (celsius * 1.8) + 32
-print(f"La temperatura en fahrenheit es {fahrenheit}")
+print("La temperatura en fahrenheit es %.2f" % fahrenheit) # fijaos en el formato del float 
 
 #@title Programa para convertir Fahrenheit a Celsius (grados)
 fahrenheit = 99 #@param {type:"integer"}
@@ -41,4 +41,4 @@ To convert temperatures in degrees Celsius to Fahrenheit, multiply by 1.8 (or 9/
 Example: (30°C x 1.8) + 32 = 86°F
 """
 celsius = (fahrenheit - 32)  * 0.5556
-print(f"La temperatura en grados celsius es {celsius}")
+print(f"La temperatura en grados celsius es {celsius:.3f}") # fijaos en el formato del float 
