@@ -46,3 +46,17 @@ print(f"El total de su compra de pantalones es {currency}.")
 accion = 3.0172
 print(accion)
 print(int(accion))
+
+# comparar tipos de datos
+a = 5
+b = 4.32
+c = 10
+
+resultado = 0
+if isinstance(a, int):
+  resultado =+ a
+if isinstance(b, int):
+  resultado =+ b
+if isinstance(c, int):
+  resultado =+ c
+print(resultado)
