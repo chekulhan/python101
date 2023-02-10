@@ -14,3 +14,18 @@ if qty <0 or qty > 10:
 else:
   print("Acceptado")
 
+
+  
+  
+  
+# Gastos de electricidad
+cantidad = 100000
+
+if cantidad > 1000:
+  print("Has gastado mucho este mes")
+elif cantidad > 500:
+  print("Has gastado bastante este mes")
+elif cantidad > 100:
+  print("Has gastado poco este mes")
+else:
+  print("No has gastado nada este mes")
