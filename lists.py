@@ -8,3 +8,18 @@ for i in nombres:
     counter +=1
 
 print(f"{str(counter)} alumno(s) estan presente hoy.")
+
+
+
+
+
+
+
+notas = [6, 4, 1, 10, 10, 7, 4]
+total = 0
+for n in notas:
+  total += n
+
+print(total)
+print(len(notas))
+print("media" + str(total/len(notas)))
