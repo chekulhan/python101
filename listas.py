@@ -21,6 +21,7 @@ if "piano" in instrumentos:
   print("Piano existe")
 
 # modificar
+instrumentos["piano"] = "PIANO" # no es posible de esta forma
 instrumentos[1] = "PIANO"
 print(instrumentos[1])
 
