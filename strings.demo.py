@@ -61,6 +61,16 @@ if BUSCAR in texto:
 else:
     print("No encontrado")
 
+    
+tuple = ("Jon", "Maria", "Antonio")
+a = "$".join(tuple)
+print(a)
+
+z  = "abc"
+y = " ".join(z)
+print(y)
+
+
 
 # recibe un carácter y devuelve su representación en código unicode
 print(ord("ñ"))
