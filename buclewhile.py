@@ -27,6 +27,14 @@
 #     i = i+1
 
 
+# continue
+i = 0
+while i < 6:
+  i += 1
+  if i == 3:
+    continue
+  print(i)
+  
 
 
 # j = 1
@@ -69,3 +77,29 @@
 #     if i not in (10, 20, 30, 40, 50, 60, 70, 80, 90):
 #         print(i)
 #     i = i +1
+
+
+while True:
+  pwd1 = input("Introducir tu contraseña: ")
+  pwd2 = input("Introducir de nuevo tu contraseña: ")
+  if pwd1 == pwd2:
+    print("Muy bien. las contraseñas coinciden.")
+    break
+  print("Las contrseñas no coinciden. Hacerlo de nuevo.")
+
+  
+  
+  
+i = 1
+ch = "*"
+while i < 10:
+  print(ch*i)
+  i= i+2
+else:
+  print("--------")
+
+i = 9
+while i > 0:
+  print(ch*i)
+  i= i-2
+
