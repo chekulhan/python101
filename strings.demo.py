@@ -93,3 +93,29 @@ elif EXCLUDE1 in password.lower() or EXCLUDE2 in password.lower() or EXCLUDE3 in
     print(f"Por favor, vuelve a introducir una contraseña sin palabras claves como {password}.")
 else:
     print(f"Bienvenidos a Amazon {nombre.capitalize()}, {apellido.capitalize()}.")
+    
+    
+    
+    
+    
+    
+# convertir 122,Python,es,64,un,777,lenguaje,222,de,55,66,programacion a Python es un lenguaje de programacion
+text = "122,Python,es,64,un,777,lenguaje,222,de,55,66,programacion"
+
+lista = text.split(",")
+
+print(type(lista))
+print(lista)
+print(type(lista[0]))
+texto_lista = [i for i in lista if not i.isnumeric()]  # list comprehension
+print(texto_lista)
+
+# opcion 1
+texto_final1 = ""
+for i in texto_lista:
+  texto_final1 = texto_final1 + " " + i
+print(texto_final1.strip())
+
+# opcion 2
+texto_final2 = " ".join(str(i) for i in texto_lista)
+print(texto_final2)
