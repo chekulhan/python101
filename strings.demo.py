@@ -6,6 +6,21 @@ print(len(texto))
 print(texto.capitalize())
 # mayúsculos - lo opuesto en lower()
 print(texto.upper())
+
+# strip espacios
+s = "    Hola.       "
+s = s.strip()   # tambien hay lstrip, rstrip
+print("X" + s + "X")
+
+t = "###hola###"
+t = t.strip("#")
+print("X" + t + "X")
+
+u = "Hola a todos todos todos"
+u = u.replace("todos", "TODOS")
+print(u)
+
+
 # multi-linea con \n
 print("programazioan\ngustatzen\nzait")
 # substring
@@ -17,6 +32,9 @@ print(texto[::-1])
 
 # imprimir todo 5 veces
 print(texto*5)
+
+
+
 
 # imprimir cada cáracter en una linea
 #for s in texto:
