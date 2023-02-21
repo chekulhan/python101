@@ -21,6 +21,15 @@ u = u.replace("todos", "TODOS")
 print(u)
 
 
+#split
+nombre_completo = "jon#smith"
+
+nombres = nombre_completo.split("#")
+print(type(nombres))
+nombre, apellido = nombre_completo.split("#")
+print(type(nombre), type(apellido))
+
+
 # multi-linea con \n
 print("programazioan\ngustatzen\nzait")
 # substring
