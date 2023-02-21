@@ -140,3 +140,37 @@ print(texto_final1.strip())
 # opcion 2
 texto_final2 = " ".join(str(i) for i in texto_lista)
 print(texto_final2)
+
+
+
+
+
+emails = ["jon.smith@microsoft.com", "maria.fernandez@microsoft.com", "david@microsoft.com", "isabel@microsoft.es","alfonso@gmail.com"]
+
+# Generar un informe con:
+# - los nombres de los usuarios
+# - los dominios únicos (sin repetir el dominio)
+
+nombres = ("maria", "jon", "david")
+# con los nombres, generar un texto en format CSV con nuevos correos e.g maria@nazaret.eus,jon@nazaret.eus,david@nazaret.eus
+
+dominios = []
+for email in emails:
+  nombre, dominio = email.split("@")
+  print(nombre)
+  if dominio not in dominios:
+    dominios.append(dominio)
+
+print(dominios)
+
+nombres = ("maria", "jon", "david")
+DOMINIO = "@nazaret.eus"
+correos = []
+for nombre in nombres:
+  correo = nombre + DOMINIO
+  correos.append(correo)
+
+texto = ",".join(correos)
+print(texto)
+
+
