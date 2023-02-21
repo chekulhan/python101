@@ -100,8 +100,10 @@ else:
     
     
 # convertir 122,Python,es,64,un,777,lenguaje,222,de,55,66,programacion a Python es un lenguaje de programacion
-text = "122,Python,es,64,un,777,lenguaje,222,de,55,66,programacion"
+text = "   122,Python,es,64,un,777,lenguaje,222,de,55,66,programacion    "
+text = text.strip()
 
+print("X" + text + "X")
 lista = text.split(",")
 
 print(type(lista))
