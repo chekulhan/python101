@@ -174,3 +174,31 @@ texto = ",".join(correos)
 print(texto)
 
 
+texto = "    Lo más importante que nos ha mantenido en Python... bueno, hay 2 cosas importantes. Uno son las bibliotecas. La otra cosa que nos mantiene en Python, y esto es lo más importante, es facil de leer y entender. Cuando contratamos nuevos empleados. Solo digo, 'todo lo que escribas debe estar en python'. Sólo para que pueda leerlo. Y es increíble porque puedo ver desde el otro lado de la habitación, mirando su pantalla, si su código es bueno o malo. Porque un buen código de Python tiene una estructura muy obvia. Y eso hace que mi vida sea mucho más fácil        "
+
+
+# Contar las veces que la palabra Python aparece en el texto
+# ...y si a veces aparece en el texto con mayusculas y minusculas - Python, python
+print(texto.count("Python"))
+print(texto.upper().count("PYTHON"))
+
+# Encuentras la ubicacion (numero de caracter) donde esta la primera ocurrrencia de la palabra Python. ¿Y la segunda?
+
+print(texto.find("Python"))
+print(texto.find("Python", 50, len(texto)))
+
+# La palabra 'código' esta en el texto? Usar if ... in ...:
+
+if "código" in texto:
+  print("Palabra 'codigo' en texto")
+else:
+  print("No esta en el texto")
+
+# reemplazar Python por PYTHON
+print(texto.replace("Python", "PYTHON"))
+
+# quitar los espacios
+print("X" + texto.strip() + "X")
+
+# cambiar la letra de todo el text a "lO MÁS IMPORTANTE QUE NOS HA MANTENIDO EN pYTHON... "
+print(texto.swapcase())
