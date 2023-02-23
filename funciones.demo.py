@@ -60,4 +60,6 @@ print(x)
 #print(y) # error
 mensaje()
 
-# TO DO __main__ function
+# programa
+if __name__ == '__main__':
+  llamar_funcion()
