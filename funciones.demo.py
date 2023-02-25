@@ -63,3 +63,40 @@ mensaje()
 # programa
 if __name__ == '__main__':
   llamar_funcion()
+
+  
+# RESPUESTAS
+# Actividad: Repetir x veces
+
+# devolver el numero del usuario
+def get_numero():
+  numero = int(input("Introducir tu numero"))
+  return numero
+
+# imprimir un número x veces, imprimiendo a la pantalla
+def repetir_numero(contar):
+  for i in range(contar):
+    print(i + 1)
+
+if __name__ == "__main__":
+  print("Un programa para repetir un numero.")
+  numero = get_numero()
+  repetir_numero(numero)
+  
+  
+# Actividad: AREA m2
+# Pedir los lados del usuario
+def get_lados():
+  lado = float(input("Ingresa el lado del cuadrado: "))
+  ancho = float(input("Ingresa el ancho del cuadrado: "))
+  return lado, ancho
+
+# calcular el área 
+def calcular_area(lado, ancho):
+  return lado * ancho
+
+if __name__ == "__main__":
+  print("Un programa para calcular el área de una superficie.")
+  lado, ancho = get_lados()
+  area = calcular_area(lado, ancho)
+  print(f"El area del cuadrado es: {area} cm")
