@@ -100,3 +100,28 @@ if __name__ == "__main__":
   lado, ancho = get_lados()
   area = calcular_area(lado, ancho)
   print(f"El area del cuadrado es: {area} cm")
+
+  
+  
+ # DEMO - pass by reference, value, object
+# metodo - Pass-by-Object
+# pasando INMUTABLE objetos - call by value
+def ref_demo(x):
+  #print("x=",x," id=",id(x))
+  x=42
+  print(x)
+  #print("x=",x," id=",id(x))
+
+x = 100
+ref_demo(x)
+print("x=",x," id=",id(x))
+
+# pasando MUTABLE objetos - call by reference
+def incrementar_ciudad(cities):
+    print(cities)
+    cities.append("Madrid")
+    print(cities)
+  
+ciudades = ["San Sebastian", "Bilboa"]
+incrementar_ciudad(ciudades)
+print(ciudades)
