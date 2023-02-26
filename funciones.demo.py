@@ -102,6 +102,21 @@ if __name__ == "__main__":
   print(f"El area del cuadrado es: {area} cm")
 
   
+ # ACTIVIDAD - pasando elementos sin fin a una funcion
+def imprimirDiasSemana(*args):
+  count = 1
+  for i in args:
+    print(f"{i} es la {count} dia de la semana")
+    count += 1
+      
+if __name__ == "__main__":
+    imprimirDiasSemana("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
+    print("-"*10) 
+    imprimirDiasSemana("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo")
+  
+  
+  
+  
   
  # DEMO - pass by reference, value, object
 # metodo - Pass-by-Object
