@@ -140,3 +140,20 @@ def incrementar_ciudad(cities):
 ciudades = ["San Sebastian", "Bilboa"]
 incrementar_ciudad(ciudades)
 print(ciudades)
+
+
+# respuesta propina - argumentos por defecto
+def calcular_cuenta(cuenta, propina=10):
+  total = cuenta*(1 + 0.01*propina)
+  total = round(total,2)
+  return total
+
+if __name__ == "__main__":
+  # calcular la cuenta sin definir la propina - 10% por defecto
+  total = calcular_cuenta(100)
+  print(f"Hay que pagar ${total}")
+
+  # calcular la cuenta con una propina de 12%
+  total = calcular_cuenta(100, 12)
+  print(f"Hay que pagar ${total}")
+
