@@ -28,3 +28,29 @@ print(maria)
 print(dir(User))
 print(jon == maria)
 print(jon.__str__()) # es posible, pero no recomendable
+
+
+
+
+# fijate en el uso de pi, un atributo del Clase
+
+class Circulo(object):
+  pi = 3.14159
+
+  def __init__(self, radio):
+    self.radio = radio
+
+  def area(self):
+    # prueba 1
+    return Circulo.pi * self.radio * self.radio
+    # prueba 2
+    return self.pi * self.radio * self.radio
+  
+# pruebas - ¿qué ocurre con prueba 1 y prueba 2?
+c1 = Circulo(10)
+c1.pi = 55
+print(c1.area())
+
+c2 = Circulo(10)
+c2.pi = 55
+print(c2.area())
