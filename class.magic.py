@@ -54,3 +54,29 @@ print(c1.area())
 c2 = Circulo(10)
 c2.pi = 55
 print(c2.area())
+
+
+
+# Tienda de mascotas
+class Perro:
+
+  def __init__(self, nombre, edad, raza):
+    self.nombre = nombre
+    self.edad = edad
+    self.raza = raza
+
+perros =[] 
+
+if __name__ == "__main__":
+  miles = Perro("Miles", 4, "Jack Russell Terrier")
+  buddy = Perro("Buddy", 9, "Dachshund")
+  jack = Perro("Jack", 3, "Bulldog")
+  jim = Perro("Jim", 5, "Bulldog")
+
+  perros.append(miles)
+  perros.append(buddy)
+  perros.append(jack)
+  perros.append(jim)
+
+  for p in perros:
+    print(f"El perro se llama {p.nombre} y es {p.raza}")
