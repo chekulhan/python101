@@ -1,3 +1,34 @@
+
+# herencia y encapsulación con atributos y metodos con __ (double underscore)
+class Employee:
+    # constructor
+    def __init__(self, name, salary):
+        # public data members
+        self.name = name
+        self.__salary = salary
+        print("initializing")
+
+    # public instance methods
+    def show(self):
+        # accessing public data member
+        print("Name: ", self.name, 'Salary:', self.__salary)
+    
+    def __str__(self):
+      return "here i am"
+
+class Programador(Employee):
+  
+  def __init__(self, name, salary, lenguaje):
+    super().__init__(name, salary) # llamar el contructor de su padre
+    self.lenguaje = lenguaje
+
+java = Programador("jon", 10000, "java")
+print(java.name, java.lenguaje)
+python = Programador("maria", 50000, "python")
+
+
+
+    
 # magic functions, dunder functions o métodos dunder, Métodos especiales 
 # deberian ejecutarlos implícitamente
 # mas información: https://www.tutorialsteacher.com/python/magic-methods-in-python
