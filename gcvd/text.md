@@ -31,4 +31,5 @@ Usando la biblioteca random:
 - Preguntar al usuario por los valores minimo de A y maximo de B.
 - Crear un programa para imprimir valores aleatoreas entre A y B.
  
-
+Pregunt 4:
+Teniendo un rectángulo de 10 metros de base y 3 metros de altura, crear una función para calcular su área. OJO: Crear una función y el camando para ejecutar la función.
