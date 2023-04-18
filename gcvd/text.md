@@ -47,5 +47,5 @@ Acciones:
 
 La parte téorico vale 25 puntos. Esta parte práctica del examen vale 30 puntos. Hay que aprobar los dos partes (5/10) para aprobar el examen. Si se suspende una parte, se recuperará solo la parte suspendida.
 
-**Enviar solo un archivo de texto Python con tus respuestas a chekulhan@aulanz.net. Por si acaso, cambiar la extensión de .py a .txt para que no haya probelmas al recibirlo**
+**Enviar solo un archivo de texto Python con tus respuestas a chekulhan@aulanz.net. Por si acaso, cambiar la extensión de .py a .txt para que no haya problemas al recibirlo por mi parte**
 
