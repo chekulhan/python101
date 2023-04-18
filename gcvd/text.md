@@ -43,9 +43,10 @@ Acciones:
 - Uso de pass donde sea necesario
 - Uso de un punto de entrada del programa, donde sea necesario
 - El código funciona
+- Uso de github
 - No ha usado Internet o otros recursos para hacer las preguntas
 
 La parte téorico vale 25 puntos. Esta parte práctica del examen vale 30 puntos. Hay que aprobar los dos partes (5/10) para aprobar el examen. Si se suspende una parte, se recuperará solo la parte suspendida.
 
-**Enviar solo un archivo de texto Python con tus respuestas a chekulhan@aulanz.net. Por si acaso, cambiar la extensión de .py a .txt para que no haya problemas al recibirlo por mi parte**
+**Enviar solo el vinculo de github a chekulhan@aulanz.net**
 
