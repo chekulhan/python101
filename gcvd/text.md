@@ -31,6 +31,7 @@ lista = [5, 3, 12, -6, -3, 1, 6, 8, -12]
  
 # Pregunta 3:
 Teniendo un rectángulo de 10 metros de base y 3 metros de altura, crear una función para calcular su área.
+
 Acciones: 
  - Crear la función (2)
  - Ejecutar la función con valores que proporciona el usuario (1)
@@ -46,5 +47,5 @@ Acciones:
 
 La parte téorico vale 25 puntos. Esta parte práctica del examen vale 30 puntos. Hay que aprobar los dos partes (5/10) para aprobar el examen. Si se suspende una parte, se recuperará solo la parte suspendida.
 
-** Enviar solo un archivo de texto Python con tus respuestas a chekulhan@aulanz.net. Por si acaso, cambiar la extensión de .py a .txt para que no haya probelmas al recibirlo **
+**Enviar solo un archivo de texto Python con tus respuestas a chekulhan@aulanz.net. Por si acaso, cambiar la extensión de .py a .txt para que no haya probelmas al recibirlo**
 
