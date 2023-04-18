@@ -1,5 +1,6 @@
 # Pregunta 1:
-Tn en cuenta que un Perro y un Pájaro son una subclase (hijo) de la clase Animal.
+Usando estas notas que has recibido de una programadora, construir las clases necesarias.
+Ten cuenta que un Perro y un Pájaro son una subclase (hijo) de la clase Animal.
 
 Un Animal
  - Un Perro
