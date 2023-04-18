@@ -1,35 +1,38 @@
-Pregunta 1:
-Dado el siguuiente diagrama de clases, ten en cuenta que un perro y un pájaro es un subclase de un animal.
+# Pregunta 1:
+Dado la siguiente informacíon, ten en cuenta que un perro y un pájaro es un subclase de Animal.
 
 Un Animal
  - Un Perro
-    patas
-    hacerRuido()  # imprime Woof, woof
-    correr()
+     - patas
+     - nombre
+     - raza
+     - hacerRuido()  # imprime Woof, woof
+     - correr() # imprime estoy corriendo
  - Un Pajaro
-    patas
-    hacerRuido() # imprime Twee, twee
-    volar()
+    - patas
+    - nombre
+    - hacerRuido() # imprime Tweet, tweet
+    - volar() # todavia no tenemos detalles de este método
     
 Acciones:
-- Crear 3 objetos y sus atributos y métodos (3)
-- Crear código para instanciar un perro y un pájaro
-- Llamar a sus métodos
+- Crear 3 objetos y sus atributos y métodos (6)
+- Crear código para instanciar un Perro (1)
+- Llamar al método hacerRuido() y correr() del Perro (1)
 
 
-Pregunta 2:
+# Pregunta 2:
 Crear un programa para:
-- Imprimir los valores de esta lista (2)
-- Excluir los valores en negativo (2)
-- Al imprimir, imprimes "Hola 6" si el valor es 6. (1)
+- Imprimir los valores de esta lista, excluyendo los valores en negativo (2)
+- Al imprimir, imprimes "Hola numero 6" si el valor es 6. (1)
 
 lista = [5, 3, 12, -6, -3, 1, 6, 8, -12]
 
-
-Pregunta 3:
-Usando la biblioteca random:
-- Preguntar al usuario por los valores minimo de A y maximo de B.
-- Crear un programa para imprimir valores aleatoreas entre A y B.
  
-Pregunt 4:
-Teniendo un rectángulo de 10 metros de base y 3 metros de altura, crear una función para calcular su área. OJO: Crear una función y el camando para ejecutar la función.
+# Pregunta 3:
+Teniendo un rectángulo de 10 metros de base y 3 metros de altura, crear una función para calcular su área.
+Acciones: 
+ - Crear la función (2)
+ - Ejecutar la función (1)
+
+
+
