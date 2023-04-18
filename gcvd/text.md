@@ -1,15 +1,15 @@
 # Pregunta 1:
-Dado la siguiente informacíon, ten en cuenta que un perro y un pájaro es un subclase de Animal.
+Tn en cuenta que un Perro y un Pájaro son una subclase (hijo) de la clase Animal.
 
 Un Animal
  - Un Perro
-     - patas
+     - patas (por ejemplo, 4)
      - nombre
-     - raza
+     - raza 
      - hacerRuido()  # imprime Woof, woof
      - correr() # imprime estoy corriendo
  - Un Pajaro
-    - patas
+    - patas (por ejemplo, 2)
     - nombre
     - hacerRuido() # imprime Tweet, tweet
     - volar() # todavia no tenemos detalles de este método
@@ -17,7 +17,7 @@ Un Animal
 Acciones:
 - Crear 3 objetos y sus atributos y métodos (6)
 - Crear código para instanciar un Perro (1)
-- Llamar al método hacerRuido() y correr() del Perro (1)
+- Ejecutar el método hacerRuido() y correr() del Perro (1)
 
 
 # Pregunta 2:
@@ -32,7 +32,7 @@ lista = [5, 3, 12, -6, -3, 1, 6, 8, -12]
 Teniendo un rectángulo de 10 metros de base y 3 metros de altura, crear una función para calcular su área.
 Acciones: 
  - Crear la función (2)
- - Ejecutar la función (1)
+ - Ejecutar la función con valores que proporciona el usuario (1)
  - Modificar la función para que si el usuario ejecuta area(10), por defecto coge el valor 3 de altura  (1)
 
 
