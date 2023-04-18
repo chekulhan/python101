@@ -36,11 +36,14 @@ Acciones:
  - Modificar la función para que si el usuario ejecuta area(10), por defecto coge el valor 3 de altura  (1)
 
 
-Correccion:
+# Correccion:
 - Incluir comentarios donde sea necesarios
 - Uso de pass donde sea necesario
 - Uso de un punto de entrada del programa, donde sea necesario
 - El código funciona
 - No ha usado Internet o otros recursos para hacer las preguntas
 
+La parte téorico vale 25 puntos. Esta parte práctica del examen vale 30 puntos. Hay que aprobar los dos partes (5/10) para aprobar el examen. Si se suspende una parte, se recuperará solo la parte suspendida.
+
+** Enviar solo un archivo de texto Python con tus respuestas a chekulhan@aulanz.net. Por si acaso, cambiar la extensión de .py a .txt para que no haya probelmas al recibirlo **
 
