@@ -33,6 +33,14 @@ Teniendo un rectángulo de 10 metros de base y 3 metros de altura, crear una fun
 Acciones: 
  - Crear la función (2)
  - Ejecutar la función (1)
+ - Modificar la función para que si el usuario ejecuta area(10), por defecto coge el valor 3 de altura  (1)
 
+
+Correccion:
+- Incluir comentarios donde sea necesarios
+- Uso de pass donde sea necesario
+- Uso de un punto de entrada del programa, donde sea necesario
+- El código funciona
+- No ha usado Internet o otros recursos para hacer las preguntas
 
 
