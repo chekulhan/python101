@@ -11,7 +11,7 @@ elif accion==2:
     compra = input("Qué quieres comprar?")
     if compra in listaDeRopa:
         # pedir al usuario dinero
-        dinero=float(input("Cuesta 20 euros.Cuanto tienes?"))
+        dinero=float(input("Cuesta 20 euros. Cuanto tienes?"))
         print(f"Gracias. Devolvemos ${dinero-20:.2f}")
 
     else:
