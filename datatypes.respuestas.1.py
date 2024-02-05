@@ -60,3 +60,29 @@ if isinstance(b, int):
 if isinstance(c, int):
   resultado =+ c
 print(resultado)
+
+
+a = 4
+b = 6.55
+c = 3
+
+suma =0
+if isinstance(a, int):
+    suma +=a # suma = suma + a
+if isinstance(b, int):
+    suma +=b
+if isinstance(c, int):
+    suma +=c
+print(suma)
+
+
+a = 4
+b = 6.55
+c = 3
+lista = [a, b, c, 5.66, 8]
+suma =0
+for i in lista:
+    if isinstance(i, int):
+        suma +=i # suma = suma + a
+
+print(suma)
