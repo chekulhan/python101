@@ -173,6 +173,36 @@ for nombre in nombres:
 texto = ",".join(correos)
 print(texto)
 
+# version 2 de lista de correos
+correos = ["jon.smith@microsoft.com", "juan@email.com","maria@microsoft.com"]
+listadeNombres = []
+listadeDominios=[]
+for c in correos:
+  x, y = c.split("@")
+  listadeNombres.append(x)
+  listadeDominios.append(y)
+
+# Informe
+sTexto= "Informe de usuarios \n"
+for i in listadeNombres:
+  sTexto = sTexto + i + ","
+ 
+sTexto = sTexto[:-1] # quitamos el ultimo ,
+
+sTexto = sTexto + "\n Aqui son los dominios: \n"
+setdeDominios = set(listadeDominios)
+
+for i in setdeDominios:
+  sTexto = sTexto + "," + i 
+
+# Guardamos informe en un archivo
+print(sTexto)
+
+with open("informe.txt", "w") as f:
+  f.write(sTexto)
+
+
+
 
 texto = "    Lo más importante que nos ha mantenido en Python... bueno, hay 2 cosas importantes. Uno son las bibliotecas. La otra cosa que nos mantiene en Python, y esto es lo más importante, es facil de leer y entender. Cuando contratamos nuevos empleados. Solo digo, 'todo lo que escribas debe estar en python'. Sólo para que pueda leerlo. Y es increíble porque puedo ver desde el otro lado de la habitación, mirando su pantalla, si su código es bueno o malo. Porque un buen código de Python tiene una estructura muy obvia. Y eso hace que mi vida sea mucho más fácil        "
 
