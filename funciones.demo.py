@@ -157,3 +157,61 @@ if __name__ == "__main__":
   total = calcular_cuenta(100, 12)
   print(f"Hay que pagar ${total}")
 
+
+
+
+RESPUESTAS de ejercicios de funciones:
+
+"""
+Crear una función para saber si un número es par o impar. 
+Usar el % módulo operando, que devuelve lo que sobra de una división.
+print(11%3)   - devuelve 2
+print(10%3)    - devuelve 1
+print(9%3)    - devuelve 0  !!!
+ """
+
+
+def IsPar(x):
+    if x % 2 == 0:
+        return True # par
+    else:
+        return False # impar
+    
+print(IsPar(10)==1)
+
+
+
+Con una lista, encuentra el número máximo y mínimo.
+lista = [1,4,6,3,9,7]
+
+def minmax(lista):
+    return min(lista), max(lista)
+
+def minmax2(*args):
+    return min(args), max(args)
+
+x, y = minmax(1,6,4,3,8,9,4,4)
+
+x, y = minmax(lista)
+print(x, y)
+
+
+
+#En una línea de texto, encuentra la palabra más larga. 
+#Por ejemplo, “Me gustan los garbanzos” devuelve “garbanzos”.
+
+texto = "Me gustan, los garbanzos."
+
+def encontrarPalabra(texto):
+    palabras = texto.split()
+    max_len = 0
+    max_palabra = ""
+
+    for palabra in palabras:
+        if len(palabra) > max_len:
+            max_len = len(palabra)
+            max_palabra = palabra
+
+    return max_len, max_palabra
+
+print(encontrarPalabra(texto))
