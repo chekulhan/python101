@@ -43,7 +43,7 @@ conn.close()
 
 # Usando clases -----------------
 
-from dataclasses import dataclass
+from dataclasses import dataclass, astuple
 
 @dataclass
 class Empleado:
@@ -65,7 +65,10 @@ for row in empleados:
 
 # Insertar con un objeto ----
 e = Empleado(5, 'Juan')
+print(astuple(e))
+
 cur.execute("INSERT INTO empleados (id, name) VALUES (?, ?);", (e.id, e.name))  # use () tuple here
+cur.execute("INSERT INTO empleados (id, name) VALUES (?, ?);", astuple(e))  # use () tuple here
 
 conn.close()
 
