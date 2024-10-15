@@ -43,6 +43,22 @@ match gasto:
     case _:
         print("El valor ingresado no es válido.")
 
+# super poderes
+print("Elige un superpoder:")
+print("1) Volar")
+print("2) Invisibilidad")
+print("3) Superfuerza")
+poder = input("Introduce tu opción: ")
+
+if poder == "1":
+    print("¡Eres un héroe alado!")
+elif poder == "2":
+    print("¡Eres el Hombre Invisible!")
+elif poder == "3":
+    print("¡Eres increíblemente fuerte!")
+else:
+    print("¡Esa no es una opción válida!")
+
 
 # ----------------------------------------
 # carta usando match 
