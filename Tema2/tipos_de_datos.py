@@ -86,3 +86,52 @@ for i in lista:
         suma +=i # suma = suma + a
 
 print(suma)
+
+
+# Ejercicio de propina ---------------
+total_cuenta = float(input("Ingresa el total de la cuenta en $: "))
+
+# Solicitar el porcentaje de propina que se desea dejar
+porcentaje_propina = int(input("Ingresa el porcentaje de propina que deseas dejar (por ejemplo, 15 para 15%): "))
+
+# Calcular el valor de la propina
+propina = total_cuenta * (porcentaje_propina / 100)
+
+# Calcular el total a pagar
+total_pagar = total_cuenta + propina
+
+# Mostrar los resultados
+print(f"La propina es de: ${propina:.2f}")
+print(f"El total a pagar es: ${total_pagar:.2f}")
+
+
+
+
+# Ejercicio complejo ---------------------
+# Calculadora de Autobuses
+# Este programa calculará cuántos autobuses necesitas para llevar a un grupo de estudiantes a una excursión. Cada autobús tiene una capacidad de 50 personas (CAPACIDAD = 50). El programa debe preguntar cuántos estudiantes y cuántos profesores van a la excursión y calcular cuántos autobuses completos necesitas.
+
+  
+capacidad_autobus = 50
+
+# Solicitar al usuario cuántos estudiantes y profesores van a la excursión
+estudiantes = int(input("¿Cuántos estudiantes van a la excursión? "))
+profesores = int(input("¿Cuántos profesores van a la excursión? "))
+
+# Calcular el total de personas
+total_personas = estudiantes + profesores
+
+# Calcular cuántos autobuses completos se necesitan
+autobuses_necesarios = -(-total_personas // capacidad_autobus)  # División entera redondeada hacia arriba
+
+# Mostrar el resultado
+print(f"Necesitarás {autobuses_necesarios} autobuses para llevar a todos a la excursión.")
+
+"""
+En Python, el operador // realiza una división entera, lo que significa que devuelve el cociente sin los decimales. Siempre redondea hacia abajo, es decir, hacia el entero más pequeño.
+
+La expresión -(-total_personas // capacidad_autobus) se utiliza para hacer una división entera redondeada hacia arriba, lo cual es útil cuando necesitas asegurarte de que obtienes suficientes autobuses (o cualquier otro recurso) para cubrir el número total de personas, sin dejar a nadie fuera.
+
+Se podria haber utilizado math.ceil:
+autobuses_necesarios = math.ceil(total_personas / capacidad_autobus)
+"""
