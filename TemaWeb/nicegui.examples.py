@@ -1,4 +1,5 @@
-# introducciónes
+# https://nicegui.io/
+# ejemplos -------------
 from nicegui import ui
 
 def show_message(input_box):
@@ -27,7 +28,7 @@ ui.button('Add random number', on_click=add_number)
 ui.run()
 
 
-# ejercicio - calcular el indice de masa corporal (IMC o BMI en ingles)
+# EJERCICIO - calcular el indice de masa corporal (IMC o BMI en ingles) -------------------
 # Fijate en los ... para completar la actividad
 
 from nicegui import ui
@@ -48,7 +49,7 @@ ui.run()
 
 
 
-# respuesta a ejercicio de BMI -------------
+# RESPUESTA a ejercicio de BMI -------------
 from nicegui import ui
 
 def calculate_bmi(altura, peso):
