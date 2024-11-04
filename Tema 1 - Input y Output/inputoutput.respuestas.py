@@ -1,11 +1,16 @@
 # Respuestas
 
+
+
 # variables en una linea
 x, y, z = 5, 10, "Hello"
 print(x)
 print(y)
 print(z)
 print(x, y, z)
+
+x = 10; y = 20
+print(x, y)
 
 # Kilos a libras y viceversa
 
