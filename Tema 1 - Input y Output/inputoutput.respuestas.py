@@ -1,4 +1,12 @@
 # Respuestas
+
+# variables en una linea
+x, y, z = 5, 10, "Hello"
+print(x)
+print(y)
+print(z)
+print(x, y, z)
+
 # Kilos a libras y viceversa
 
 peso = int(input('Cuánto pesas? '))
