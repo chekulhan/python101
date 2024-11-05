@@ -1,5 +1,17 @@
 # Respuestas
 
+# formulario en colab
+# @title Calculador de Productos {"run":"auto","form-width":"200px","display-mode":"form"}
+camiseta = 4.5 # @param {"type":"number","placeholder":"Intruducir el coste del producto"}
+pantalon = 1 # @param {"type":"number","placeholder":"Intruducir el coste del producto"}
+corbata = 2.2 # @param {"type":"number","placeholder":"Intruducir el coste del producto"}
+
+print(f"El cost total es {camiseta + pantalon + corbata} euros")
+total = camiseta + pantalon + corbata
+print(f"El cost total es {total:.2f} euros") # floating point - punto flotante . = los decimales, 2 = 2 decimales, f = floating point numero
+
+
+
 
 
 # variables en una linea
