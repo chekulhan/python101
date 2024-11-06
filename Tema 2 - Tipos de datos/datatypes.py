@@ -1,5 +1,6 @@
 # INT, FLOAT, STRING, BOOL
-
+# nombrando variables 
+# camelCase = nombreAlumno, PascalCase = NombreAlumno, snake_case = nombre_alumno
 
 descripcion = "Bienvenidos a 'ABC Banco'" # mezclando
 # mezclando y multi-linea
