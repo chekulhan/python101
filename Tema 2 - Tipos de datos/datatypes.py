@@ -1,3 +1,31 @@
+# INT, FLOAT, STRING, BOOL
+
+
+descripcion = "Bienvenidos a 'ABC Banco'" # mezclando
+# mezclando y multi-linea
+descripcion = """
+Bienvenidos a 'ABC Banco'
+y puedes incluir " aqui
+"""
+# bool
+x = True
+if x:
+  print("verdadero")
+
+x = "Hola"
+if x == "Hola": # evaluado como True
+  print("Hola")
+
+# pistas - type hints
+nombre: str = "Juan"
+edad: int = 20
+precio: float = 20.32
+funciona: bool = True
+
+# asignación múltiple
+x, y, z = 1, 2, 3
+x = y = z = 0
+
 # Mutable / inmutable
 inflacion = 3.765
 x = id(inflacion)
