@@ -246,6 +246,12 @@ print(f"La propina es de: ${propina:.2f}")
 print(f"El total a pagar es: ${total_pagar:.2f}")
 
 
+# ejercicio de range
+precio = 10.51
+
+for i in range(5):
+    print(f"Si hay una venta de {i}, las ganacias serian {precio*i} euros.") # formatearlo 
+
 
 
 # Ejercicio complejo ---------------------
@@ -276,3 +282,6 @@ La expresión -(-total_personas // capacidad_autobus) se utiliza para hacer una 
 Se podria haber utilizado math.ceil:
 autobuses_necesarios = math.ceil(total_personas / capacidad_autobus)
 """
+
+
+
