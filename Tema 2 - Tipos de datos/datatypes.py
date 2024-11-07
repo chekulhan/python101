@@ -2,6 +2,19 @@
 # nombrando variables 
 # camelCase = nombreAlumno, PascalCase = NombreAlumno, snake_case = nombre_alumno
 
+
+# FLOATS
+# Formatear con % - formato antiguo
+a = 433.32
+b = 0.2121
+print("Completed in %d %.2f" %(a,b))  # d = int, f = float, s = str
+
+# Formatear con f - a partir de Python 3.6 preferible
+a = 32.5432
+b = 0.2121
+print(f'Completed in {a:.2f}')
+print(f"Completed in {a:.0f} and {b:.2f}")
+
 descripcion = "Bienvenidos a 'ABC Banco'" # mezclando
 # mezclando y multi-linea
 descripcion = """
@@ -44,24 +57,42 @@ precio: float = 20.32
 funciona: bool = True
 
 # Mutable / inmutable
+| **Mutable** Data Types      | **Immutable** Data Types    |
+|-----------------------------|-----------------------------|
+| `list`                      | `int`                       |
+| `dict`                      | `float`                     |
+| `set`                       | `str`                       |
+| `bytearray`                 | `tuple`                     |
+| `deque` (from collections)  | `frozenset`                 |
+| `Array` (from array module) | `bytes`                     |
+
+# inmutable
+x = 1000
+print(id(x))
+x = 2000
+print(id(x))
+
 inflacion = 3.765
 x = id(inflacion)
 inflacion = 3.876
 y = id(inflacion)
 print(x==y)
 
+# mutable
+lista = [56, 27]
+print(id(lista))
+lista.append(25)
+print(lista)
+print(id(lista))
+
+# interning - > -5 a 256 para int
+a = 10
+print(id(a))
+b = 10
+print(id(b))
 
 
-# Formatear con % - formato antiguo
-a = 433.32
-b = 0.2121
-print("Completed in %d %.2f" %(a,b))  # d = int, f = float, s = str
 
-# Formatear con f - a partir de Python 3.6 preferible
-a = 32.5432
-b = 0.2121
-print(f'Completed in {a:.2f}')
-print(f"Completed in {a:.0f} and {b:.2f}")
 
 # Calcular IVA de un producto
 # Comprobar tus resultados con https://www.impulsa-empresa.es/calculadora-iva/
