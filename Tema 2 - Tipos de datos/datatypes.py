@@ -17,15 +17,31 @@ x = "Hola"
 if x == "Hola": # evaluado como True
   print("Hola")
 
+
+
+
+# variables en una linea
+x, y, z = 5, 10, "Hello"
+print(x)
+print(y)
+print(z)
+print(x, y, z)
+
+x = 10; y = 20
+print(x, y)
+
+
+
+# asignación múltiple
+x, y, z = 1, 2, 3
+x = y = z = 0
+
+
 # pistas - type hints
 nombre: str = "Juan"
 edad: int = 20
 precio: float = 20.32
 funciona: bool = True
-
-# asignación múltiple
-x, y, z = 1, 2, 3
-x = y = z = 0
 
 # Mutable / inmutable
 inflacion = 3.765
