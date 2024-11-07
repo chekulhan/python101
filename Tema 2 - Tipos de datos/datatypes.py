@@ -91,8 +91,28 @@ print(id(a))
 b = 10
 print(id(b))
 
+# borrar variables
+x = 10
+print(x)
+del x
+print(x) # error
 
+# collector de basura
+import gc
+x = 1000
+print("id de x:", id(x))
+del x # es un candidato para la colección de basura
+gc.collect() # Desencadenar manualmente la recolección de basura
+print("Garbage collection triggered.")
 
+# contando las referencias a variables - internamente, usarán más referencias, por eso no suele empezar con 1
+import sys
+i = "Hola Mundo"
+print(sys.getrefcount(i))
+j = i
+print(sys.getrefcount(i))
+del j
+print(sys.getrefcount(i))
 
 # Calcular IVA de un producto
 # Comprobar tus resultados con https://www.impulsa-empresa.es/calculadora-iva/
