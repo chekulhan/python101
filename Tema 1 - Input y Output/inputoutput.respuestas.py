@@ -22,12 +22,13 @@ accion = input("Para convertir de Fahrenheit a Celsius, teclear 'c'. Para Celsiu
 if accion == "f":
     celsius = float(input("Introduce la temperatura en Celsius: "))
     fahrenheit = (celsius * 1.8) + 32
-    print("La temperatura en Fahrenheit es: %.2f" % fahrenheit)  # Formato de float
+    print("La temperatura en Fahrenheit es: %.2f" % fahrenheit)  # Formato de float tradicional
+    # print(f"La temperatura en Fahrenheit es: {fahrenheit:.2f}")  # formato más actual para usar Python 3.6
 
 elif accion == "c":
     fahrenheit = float(input("Introduce la temperatura en Fahrenheit: "))
     celsius = (fahrenheit - 32) * 0.5556
-    print("La temperatura en Celsius es: %.2f" % celsius)  # Formato de float
+    print("La temperatura en Celsius es: %.2f" % celsius)  # Formato de float 
 
 else:
     print("Lo siento. Tienes que introducir 'c' o 'f'")
