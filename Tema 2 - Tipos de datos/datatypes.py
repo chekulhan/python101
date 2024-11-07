@@ -135,6 +135,28 @@ print(sys.getrefcount(i))
 del j
 print(sys.getrefcount(i))
 
+
+
+
+# Respuestas a ejercicios -----------------------
+
+# usuario y contraseña
+USUARIO = "admin"
+PASSWORD = "password123"
+
+# Prompt the user for their username and password
+user_name = input("Introducir tu nombre de usuario: ")
+user_password = input("Contraseña: ")
+
+
+login_ok = (user_name == USUARIO) and (user_password == PASSWORD)
+
+if login_ok:
+    print("Login bien! Ongi Etorri.")
+else:
+    print("Login fallido!")
+
+
 # Calcular IVA de un producto
 # Comprobar tus resultados con https://www.impulsa-empresa.es/calculadora-iva/
 
