@@ -1,6 +1,6 @@
 # Respuestas
 
-# formulario en colab
+# formulario en colab para convertir Celsius a Fahrenheit y viceversa
 # @title Calculador de Productos {"run":"auto","form-width":"200px","display-mode":"form"}
 camiseta = 4.5 # @param {"type":"number","placeholder":"Intruducir el coste del producto"}
 pantalon = 1 # @param {"type":"number","placeholder":"Intruducir el coste del producto"}
@@ -10,19 +10,29 @@ print(f"El cost total es {camiseta + pantalon + corbata} euros")
 total = camiseta + pantalon + corbata
 print(f"El cost total es {total:.2f} euros") # floating point - punto flotante . = los decimales, 2 = 2 decimales, f = floating point numero
 
+# version para VS Code
+"""
+Este programa convierte Celsius a Fahrenheit y viceversa.
+
+Ejemplo: (50°F - 32) x 0.5556 = 10°C
+"""
+
+accion = input("Para convertir de Fahrenheit a Celsius, teclear 'c'. Para Celsius a Fahrenheit, teclear 'f': ")
+
+if accion == "f":
+    celsius = float(input("Introduce la temperatura en Celsius: "))
+    fahrenheit = (celsius * 1.8) + 32
+    print("La temperatura en Fahrenheit es: %.2f" % fahrenheit)  # Formato de float
+
+elif accion == "c":
+    fahrenheit = float(input("Introduce la temperatura en Fahrenheit: "))
+    celsius = (fahrenheit - 32) * 0.5556
+    print("La temperatura en Celsius es: %.2f" % celsius)  # Formato de float
+
+else:
+    print("Lo siento. Tienes que introducir 'c' o 'f'")
 
 
-
-
-# variables en una linea
-x, y, z = 5, 10, "Hello"
-print(x)
-print(y)
-print(z)
-print(x, y, z)
-
-x = 10; y = 20
-print(x, y)
 
 # Kilos a libras y viceversa
 
