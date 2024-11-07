@@ -52,14 +52,16 @@ print(x==y)
 
 
 
-# Formatear con %
+# Formatear con % - formato antiguo
 a = 433.32
 b = 0.2121
-print("Completed in %d %.2f" %(a,b))
+print("Completed in %d %.2f" %(a,b))  # d = int, f = float, s = str
 
-# Formatear con f
+# Formatear con f - a partir de Python 3.6 preferible
 a = 32.5432
+b = 0.2121
 print(f'Completed in {a:.2f}')
+print(f"Completed in {a:.0f} and {b:.2f}")
 
 # Calcular IVA de un producto
 # Comprobar tus resultados con https://www.impulsa-empresa.es/calculadora-iva/
