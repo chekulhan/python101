@@ -1,7 +1,9 @@
-# INT, FLOAT, STRING, BOOL
+# INT, FLOAT, STRING, BOOL, NONE
 # nombrando variables 
 # camelCase = nombreAlumno, PascalCase = NombreAlumno, snake_case = nombre_alumno
 
+# todos los tipos de datos (variables) son objetos
+print(type(x)) 
 
 # FLOATS
 # Formatear con % - formato antiguo
@@ -14,6 +16,13 @@ a = 32.5432
 b = 0.2121
 print(f'Completed in {a:.2f}')
 print(f"Completed in {a:.0f} and {b:.2f}")
+
+# MAX float
+import sys
+print(sys.float_info.max)   # Maximum float value (~1.7976931348623157e+308)
+x = 1.8e308  # Slightly larger than the max float value
+print(x)     # Output: inf
+
 
 descripcion = "Bienvenidos a 'ABC Banco'" # mezclando
 # mezclando y multi-linea
@@ -30,7 +39,13 @@ x = "Hola"
 if x == "Hola": # evaluado como True
   print("Hola")
 
-
+# NONE type
+x = None
+print(type(x))
+if x:
+    print("Tiene un valor")
+else:
+    print("No tiene nada")
 
 
 # variables en una linea
@@ -48,6 +63,12 @@ print(x, y)
 # asignación múltiple
 x, y, z = 1, 2, 3
 x = y = z = 0
+
+i = "Hola"
+print(isinstance(i, int))
+print(isinstance(i, str))
+print(isinstance(i, float))
+print(isinstance(i, bool))
 
 
 # pistas - type hints
