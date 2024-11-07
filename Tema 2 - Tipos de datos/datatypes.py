@@ -17,6 +17,15 @@ b = 0.2121
 print(f'Completed in {a:.2f}')
 print(f"Completed in {a:.0f} and {b:.2f}")
 
+# precision
+x = 0.12345678912345678912345  # hasta 15 o 17 decimales
+print(x)
+
+#representación con e
+y = 5.5e2  # equivalente a 5.5 * 10^2, or 550.0
+small_number = 4.23e-5  # This is equivalent to 4.23 * 10^-5, or 0.0000423
+print(f"The small number in decimal form is: {small_number:.12f}")
+
 # MAX float
 import sys
 print(sys.float_info.max)   # Maximum float value (~1.7976931348623157e+308)
@@ -139,6 +148,10 @@ print(sys.getrefcount(i))
 
 
 # Respuestas a ejercicios -----------------------
+
+# nocion e
+y = 5.67e4  # #equivalente a 5.67 * 10^4, or 56700.0
+print(y)
 
 # usuario y contraseña
 USUARIO = "admin"
