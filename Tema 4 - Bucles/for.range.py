@@ -50,3 +50,16 @@ dias_semana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"]
 
 for i in range(5):
   print(f"{dias_semana[i]} - tu tarea es {tareas[i]}")
+
+
+# Count down
+import time
+
+segundos = 10
+
+print("Count down")
+for i in range(segundos, 0, -1):
+    print(i)
+    time.sleep(1)
+
+print("Blast off! Despegue!")
