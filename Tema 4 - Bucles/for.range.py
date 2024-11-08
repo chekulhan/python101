@@ -65,6 +65,8 @@ for i in range(segundos, 0, -1):
 print("Blast off! Despegue!")
 
 # Calcular el tiempo para hacer una tarea
+# timeit module puede ser utilizado tambien
+
 import time
 
 start = time.perf_counter() # comenzar
@@ -76,3 +78,4 @@ end = time.perf_counter() # terminar
 print(f"Elapsed time: {end - start}")
 
 %%timeit  # en Colab, usar el magic command
+
