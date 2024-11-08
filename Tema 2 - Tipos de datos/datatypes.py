@@ -32,6 +32,7 @@ print(sys.float_info.max)   # Maximum float value (~1.7976931348623157e+308)
 x = 1.8e308  # Slightly larger than the max float value
 print(x)     # Output: inf
 
+# STRINGS
 
 descripcion = "Bienvenidos a 'ABC Banco'" # mezclando
 # mezclando y multi-linea
@@ -39,6 +40,12 @@ descripcion = """
 Bienvenidos a 'ABC Banco'
 y puedes incluir " aqui
 """
+
+a = "hello"
+b = "hello"
+print(a is b)
+print(a == b)
+
 # bool
 x = True
 if x:
@@ -130,6 +137,11 @@ a = 10
 print(id(a))
 b = 10
 print(id(b))
+
+# interning con strings
+a = "hello"
+b = "hello"
+print(id(a) == id(b))
 
 # borrar variables
 x = 10
