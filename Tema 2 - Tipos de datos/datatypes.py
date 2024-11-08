@@ -48,6 +48,12 @@ x = "Hola"
 if x == "Hola": # evaluado como True
   print("Hola")
 
+print(True + 1)  # matemáticas, esta representado como 0, 1
+print(bool(10))
+print(bool("Hola"))
+print(bool(""))
+
+
 # NONE type
 x = None
 print(type(x))
