@@ -33,6 +33,14 @@ for i in range(len(frutas)):
 for i in range(11):
   print(f"5*{i}={5*i}")
 
+# Marketing ganancias
+precio = 10.02  
+
+for cantidad in range(2, 6):  # Para las cantidades de 2, 3, 4 y 5 productos
+    ganancia = cantidad * precio
+    print(f"Si vendemos {cantidad} producto(s), ganaremos {ganancia:.2f} euros.")
+
+
 # numeros pares
 for i in range(10, 22, 2):
   print(i)
