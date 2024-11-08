@@ -67,6 +67,10 @@ print(x, y, z)
 x = 10; y = 20
 print(x, y)
 
+# numeros complejos
+z = 3 + 4j # en matemáticas, se suele usar i. Pensar en coordinadas en un plano de x (real), y (imaginary)
+print(z.real)
+print(z.imag)
 
 
 # asignación múltiple
