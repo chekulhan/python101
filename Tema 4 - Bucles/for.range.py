@@ -52,6 +52,20 @@ for i in range(5):
   print(f"{dias_semana[i]} - tu tarea es {tareas[i]}")
 
 
+# Coche en movimiento
+import time
+
+car = "\U0001F697"
+
+distancia = 10
+for posicion in range(distancia):
+    print(" " * posicion, end="")  # Incrementar los espacios
+    print(car, end="\r") # por defect end="\n", end="\r" sobreescribi
+    time.sleep(0.5)  # Pause to simulate movement
+
+
+
+
 # Count down
 import time
 
