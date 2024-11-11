@@ -44,3 +44,9 @@ print(f"Carlos lleva {carlos}")
 # Mostrar la lista única de todos los objetos
 print("Lista de todos los objetos:")
 print(", ".join(equipamiento))
+
+contarTiendas = 0
+for i in equipamiento:
+    if i in "tienda":
+        contarTiendas += 1
+print(f"Al final, tenemos {contarTiendas} tienda(s)")
