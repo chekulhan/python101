@@ -106,6 +106,7 @@ while i > 0:
 
 
 # Ejercicio de nested listas con WHILE
+# Para nivel avanzado, hazlo sin mirar las pistas en el código. Para otros niveles, usar las pistas abajo.
 
 ciudades = [
     ["Nueva York", ["Estatua de la Libertad", "Central Park", "Times Square"]],
@@ -148,3 +149,21 @@ while i < len(ciudades):
     # ¿Qué hace falta aqui?
   
     i+=1
+
+
+# RESPUESTA  final
+i =0
+while i < len(ciudades):
+    ciudad = ciudades[i]
+    nombre = ciudad[0]
+    sitios = ciudad[1]
+
+    print(f"En {nombre}, puedes visitar:")
+    j = 0
+    while j < len(sitios):
+        sitio = sitios[j]
+        print(f" - {sitio}")
+        j += 1
+
+    i+=1
+
