@@ -102,3 +102,49 @@ i = 9
 while i > 0:
   print(ch*i)
   i= i-2
+
+
+
+# Ejercicio de nested listas con WHILE
+
+ciudades = [
+    ["Nueva York", ["Estatua de la Libertad", "Central Park", "Times Square"]],
+    ["Los Ángeles", ["Cartel de Hollywood", "Venice Beach", "Observatorio Griffith"]],
+    ["París", ["Torre Eiffel", "Museo del Louvre", "Catedral de Notre-Dame"]],
+]
+
+"""
+Resultado:
+En Nueva York, puedes visitar:
+- Estatua de la Libertad
+- Central Park
+- Times Square
+
+En Los Ángeles, puedes visitar:
+- Cartel de Hollywood
+- Venice Beach
+- Observatorio Griffith
+
+En París, puedes visitar:
+- Torre Eiffel
+- Museo del Louvre
+- Catedral de Notre-Dame
+
+
+¿Puedes hacer lo mismo usando un bucle FOR?
+Comparar los resultados con IA generativa
+"""
+
+
+print(len(ciudades))
+
+i =0
+while i < len(ciudades):
+    ciudad = ciudades[i]
+    nombre = ciudad[0]
+    sitios = ciudad[1]
+
+    print(f"En {nombre}, puedes visitar:")
+    # ¿Qué hace falta aqui?
+  
+    i+=1
