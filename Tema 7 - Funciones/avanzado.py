@@ -38,3 +38,27 @@ print(func_dict['add'](10, 2))  # Output: 12
 print(func_dict['subtract'](10, 2))  # Output: 8
 
 # el tema "Tema Avanzado", aprenderemos a usar decorators
+
+# ejercicios avanzados
+# un string, al revés, sin usar metodos
+
+def reverse_string(text):
+    new_string = ""
+    max_len = len(text)
+    for i in range(max_len, 0, -1):
+        new_string = new_string + (text[i-1])
+    return new_string
+
+print(reverse_string("Hello"))
+
+# factorial
+
+def factorial(num):
+    if num == 0:
+        return 1
+    else:
+        return num * factorial(num-1) 
+
+
+print(factorial(5)) # 4 * 3 * 2 * 1
+print(5 * 4 * 3 * 2 * 1)
