@@ -51,6 +51,7 @@ def reverse_string(text):
 
 print(reverse_string("Hello"))
 
+
 # factorial
 
 def factorial(num):
@@ -62,3 +63,22 @@ def factorial(num):
 
 print(factorial(5)) # 4 * 3 * 2 * 1
 print(5 * 4 * 3 * 2 * 1)
+
+
+
+# empezando con las tareas, completar las funciones
+to_do_list = [["Comprar leche", False], ["Hacer las deberes", False], ["Regar las plantas", False] ]
+mostrar_not_done(to_do_list)
+mark_as_done(to_do_list, "Comprar leche")
+add_new_task(to_do_list, "Comprar huevos")
+
+# respuesta:
+def mark_as_done(to_do_list, task):
+    for i in to_do_list:
+        if i[0] == task:
+            i[1] = True
+        
+def mostrar_not_done(to_do_list):
+    for i in to_do_list:
+        if i[1] == False:
+            print(i)
