@@ -141,6 +141,23 @@ ciudades = ["San Sebastian", "Bilboa"]
 incrementar_ciudad(ciudades)
 print(ciudades)
 
+# Calcular el precio de los productos en una cafetería
+def conseguir_precio(producto):
+    match producto:
+        case "café":
+            return 2.51
+        case "té":
+            return 1.80
+        case _:
+            print("Error")
+            # return None
+
+if __name__=="__main__":
+    producto = input("Qué quieres tomar?")
+    precio = conseguir_precio(producto)
+    print(f"The product {producto} es {precio*1.1}")
+
+
 
 # respuesta propina - argumentos por defecto
 def calcular_cuenta(cuenta, propina=10):
@@ -215,3 +232,5 @@ def encontrarPalabra(texto):
     return max_len, max_palabra
 
 print(encontrarPalabra(texto))
+
+
