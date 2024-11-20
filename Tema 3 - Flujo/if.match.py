@@ -103,3 +103,21 @@ match edad:
         print("Ilegal")
     case _:
         print("Puedes entrar")
+
+
+# respuesta con función
+def comprobar_edad_disco(edad):
+    match edad:
+        case _ if edad< 18 or edad > 65:
+            return False
+        case _:
+            return True
+
+if __name__=="__main__":
+    edad = int(input("Cuantos años tienes"))
+
+    if comprobar_edad_disco(edad):
+        print("Puedes entrar")
+    else:
+        print("No peudes entrar")
+
