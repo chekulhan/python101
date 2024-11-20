@@ -93,3 +93,13 @@ elif pedido == "muffin":
     print("Has seleccionado Muffin. El precio es $2.00.")
 else:
     print(f"Lo siento, no tenemos {pedido} en el menú.")
+
+
+# respuesta sencilla de actividad con match de la discoteca
+edad = 26
+
+match edad:
+    case _ if edad< 18 or edad > 65:
+        print("Ilegal")
+    case _:
+        print("Puedes entrar")
