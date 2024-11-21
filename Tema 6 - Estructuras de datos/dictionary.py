@@ -1,3 +1,5 @@
+# Intro hacer kwargs para funciones
+
 # DEMO
 # Trabajando con Diccionarios {key:value}
 acciones = {"MSFT": 91.5, "REP": 7.91, "BBVA": 6.9}
