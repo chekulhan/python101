@@ -20,8 +20,13 @@ for price in acciones.values():
 
 print("REP" in acciones.keys())
 
+# actualizar datos
 acciones.update({"SAN": 8.71})
 print(acciones)
+acciones["MSFT"] = 92.5
+print(acciones)
+
+
 
 # DEMO Diccionario a JSON 
 
@@ -38,7 +43,9 @@ print(type(b))
 print(b)
 
 
-# ACTIVIDAD
+
+# ACTIVIDADES de clase
+# Sumar todos los precios, incluyendo una nueva accion de OHL, y excluyendo SAN
 acciones = {"MSFT": 91.5, "REP": 7.91, "BBVA": 6.9}
 
 acciones.update({"OHLA": 0.59})
@@ -48,3 +55,14 @@ for key, value in acciones.items():
     suma+= value
   
 print(f"La total de los precios de las acciones es {suma}")
+
+# Actividad
+acciones = {"MSFT": [91.5, 54.1, 76.4], "REP": [7.91, 5.6, 6.7], "BBVA": [6.9]}
+
+for k, v in acciones.items():
+    print(k, v)
+    print(type(k))
+    print(type(v))
+    for precios in v:
+        print(precios)
+
