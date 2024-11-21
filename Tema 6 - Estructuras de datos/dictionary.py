@@ -105,3 +105,34 @@ def gestion_configuracion():
 # Llamar a la función de gestión
 gestion_configuracion()
 
+
+# Peliculas
+peliculas = [
+    {
+        "titulo": "El laberinto del fauno",
+        "director": "Guillermo del Toro",
+        "año": 2006,
+        "genero": "Fantasía, Guerra",
+        "calificacion": 8.2
+    },
+    {
+        "titulo": "Mar adentro",
+        "director": "Alejandro Amenábar",
+        "año": 2004,
+        "genero": "Drama",
+        "calificacion": 8.0
+    },
+    {
+        "titulo": "Todo sobre mi madre",
+        "director": "Pedro Almodóvar",
+        "año": 1999,
+        "genero": "Drama, Comedia",
+        "calificacion": 6.9
+    }
+]
+
+# Mostrar todas las peliculas con una calificación muy buena!
+# Mostrar todas las peliculas estrenadas antes del año 2000!
+# Agregar una nueva película a la lista
+# Borrar la película de Pedro Almodóvar
+# Actualizar la calificacion de Mar adentro a 9.1
