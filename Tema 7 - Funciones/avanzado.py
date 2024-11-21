@@ -82,3 +82,25 @@ def mostrar_not_done(to_do_list):
     for i in to_do_list:
         if i[1] == False:
             print(i)
+
+
+# Actividad de kwargs con diccionario
+# Usar para introduccion a dictionary
+# quieres mandar un correo - usar **kwargs para solucionarlo
+
+enviar_correo(recipiente="ckulhan@nazaret.eus", asunto="Hola", cuerpo="Hola, qué tal?")
+enviar_correo(recipiente="ckulhan@nazaret.eus", cuerpo="Hola, qué tal?")
+
+# respuesta:
+def enviar_correo(recipiente, **kwargs):
+    asunto, cuerpo = "", ""
+
+    if "asunto" in kwargs:
+        asunto = kwargs["asunto"]
+    if "cuerpo" in kwargs:
+        cuerpo = kwargs["cuerpo"]
+    
+    print(f"""Enviando correo a {recipiente}
+    asunto: {asunto}
+    cuerpo: {cuerpo}
+    """)
