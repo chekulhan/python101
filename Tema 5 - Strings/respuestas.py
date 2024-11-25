@@ -66,6 +66,17 @@ print(texto_final2)
 
 
 
+# actividad encriptado
+message = "Hola Mundo"
+encriptado = []
+for c in message:
+    encriptado.append((ord(c) + 1))
+
+print(encriptado)
+
+for i in encriptado:
+    print(chr(i-1))
+
 
 emails = ["jon.smith@microsoft.com", "maria.fernandez@microsoft.com", "david@microsoft.com", "isabel@microsoft.es","alfonso@gmail.com"]
 
