@@ -76,3 +76,27 @@ print(y)
 print(ord("ñ"))
 # recibe un número y devuelve su representación como carácter
 print(chr(241))
+
+
+# ACTIVIDAD juntos de clase:
+s="    122,Python,es,64,un,777,lenguaje,222,de,55,66,programación  "
+a = s.strip()
+b = a.split(",")
+print(b)
+
+for w in b:
+    if not w.isnumeric():
+        print(w)
+
+
+# Respuestas:
+# actividad encriptado
+message = "Hola Mundo"
+encriptado = []
+for c in message:
+    encriptado.append((ord(c) + 1))
+
+print(encriptado)
+
+for i in encriptado:
+    print(chr(i-1))
