@@ -88,15 +88,3 @@ for w in b:
     if not w.isnumeric():
         print(w)
 
-
-# Respuestas:
-# actividad encriptado
-message = "Hola Mundo"
-encriptado = []
-for c in message:
-    encriptado.append((ord(c) + 1))
-
-print(encriptado)
-
-for i in encriptado:
-    print(chr(i-1))
