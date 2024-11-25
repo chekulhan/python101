@@ -210,15 +210,3 @@ if __name__ == "__main__":
 
 
 
-# Actividad avanzado
-# Has recibido esta información al submit un formulario. Limpiar los datos.
-form_data = "    NAME: john doe; EMAIL: John.Doe@EXAMPLE.com   ; PHONE: (123) 456-7890; COMMENT:    I’m very interested in your product! Could you send me more details?    "
-
-#  Sacar los reviews positivos en un lado y negativos por otro
-reviews = [
-    "  I absolutely LOVE this product!!! It's amazing and works perfectly.   ",
-    "Terrible experience. It broke after just ONE day of use. Never buying again!  ",
-    "Good value for the price. Nothing extraordinary, but gets the job done.",
-    "Awful. Waste of money!!!   Completely disappointed.   ",
-    "Highly recommend it! Great quality and very easy to use."
-]
