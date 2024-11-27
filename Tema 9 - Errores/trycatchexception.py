@@ -25,3 +25,20 @@ except Exception as error:
 
 print("END")
 print(s)
+
+
+# respuesta a actividad
+
+while True:
+  x = input("Introducir un número o 'exit' para salir.")
+  
+  if x.lower() == "exit":  # Comprobar si quiere continuar o no
+        print("Adios!")
+        break
+
+  try:
+    numero = int(x)
+    print(f"Has introducido {numero}")
+
+  except ValueError as error:
+    print("Error. Introducir un número")
