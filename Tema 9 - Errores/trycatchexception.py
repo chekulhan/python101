@@ -8,3 +8,20 @@ try:
 except ValueError:
     # Capturar el error si la conversión falla
     print("¡Error! Debes ingresar un número válido.")
+
+
+
+
+import traceback
+
+try:
+  with open("abc.txt", "r") as f:
+    print("open")
+
+except Exception as error:
+  s = traceback.format_exc()
+  # traceback.print_exc() # directamente a stdoutput
+
+
+print("END")
+print(s)
