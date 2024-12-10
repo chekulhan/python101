@@ -18,6 +18,7 @@ print(sumar(5,6))
 # se lee asi - una funcion que acepta a y b y devuelve a +b
 x = lambda a, b: a+b
 print(x(5,6))
+print((lambda a, b: a+b) (2, 3))
 
 # ACTIVIDAD 
 # Crear unas funciones lambda para hacer matemáticas. Por ejemplo, restar y dividir
