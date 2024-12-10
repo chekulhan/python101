@@ -38,3 +38,19 @@ cursor.execute('UPDATE users SET age = ? WHERE name = ?', (35, 'Alice'))
 # DELETE
 # A single-value tuple requires a trailing comma (value,). Por ejemplo: cursor.execute('DELETE FROM users WHERE name = ?', ('Alice',))
 cursor.execute('DELETE FROM users WHERE name = ?', ('Alice',))
+
+
+
+# una lista de objetos - executemany
+demos = [
+    Demo(301, "Alice", "Alice"),
+    Demo(302, "Alice", "Alice"),
+    Demo(303, "Alice", "Alice"),
+]
+
+# convertimos la lista de objetos en una tupla
+datos = [(demo.ID, demo.Name, demo.Hint) for demo in demos] 
+cursor = connection.cursor()
+
+cursor.executemany("INSERT INTO demo (ID, Name, Hint) VALUES (?, ?, ?)", datos)
+connection.commit()
