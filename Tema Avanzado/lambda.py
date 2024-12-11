@@ -38,3 +38,6 @@ for num in mi_lista:
 
 resultado = [(lambda x:x>0)(i) for i in mi_lista]
 print(resultado)
+
+number = -10
+(lambda x: "Positive" if x>0 else "Negative")(number)
