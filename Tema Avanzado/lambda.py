@@ -35,3 +35,6 @@ print(positivos)
 
 for num in mi_lista:
   print(z(num))
+
+resultado = [(lambda x:x>0)(i) for i in mi_lista]
+print(resultado)
