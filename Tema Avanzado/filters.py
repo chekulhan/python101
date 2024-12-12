@@ -1,3 +1,6 @@
+# The filter function exhibits "lazy evaluation" because it returns an iterator rather than a fully constructed list. An iterator generates items on demand, as you iterate through it.
+# O sea, mejor rendimiento que list comprehension
+
 lenguajes = ["Python", "Javascript", "Java", "React", "Swift"]
 
 # crear una lista con 
