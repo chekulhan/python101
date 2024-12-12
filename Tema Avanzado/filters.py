@@ -22,12 +22,33 @@ users = filter(lambda x: x["edad"]>=40, usuarios)
 #[{'nombre': 'Isabel', 'edad': 65}, {'nombre': 'David', 'edad': 41}]
 print(list(users))
 
+
+#Actividades:
+#actividad 1: Has recibido datos de las edades una cuestionario. Limpiarlos.
+edades = [25, -3, 42, 130, 18, 0, 85]
+
+#actividad 2: Filtrar los usuarios activos
+usuarios = [
+    {"nombre": "Juan", "activo": True},
+    {"nombre": "Isabel", "activo": False},
+    {"nombre": "Penelope", "activo": True},
+]
+
+#actividad 3: Sacar los datos entre 1000 y 2000
 ventas = [['2021-05-31', 1500],
           ['2021-04-31', 1200],
           ['2021-03-31', 800],
           ['2021-02-28', 8000],
             ]
-# entre 1000 y 2000
+
+--------------------------------
+
+
+# respuestas:
+list(filter(lambda x: x>0, edades))
+
+list(filter(lambda x: x["activo"] == True, usuarios))
+list(filter(lambda x: x["activo"], usuarios))
 
 v = filter(lambda x:x[1]>1000 and x[1]<2000, ventas)
 print(list(v))
