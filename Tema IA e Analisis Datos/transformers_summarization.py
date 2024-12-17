@@ -18,6 +18,8 @@ summary[0]
 # buscar los archivos -----------
 import os
 os.listdir(os.path.expanduser('~/.cache/huggingface/hub'))
+!ls ~/.cache/
+
 
 # Información sobre los modelos -----------
 model_name = "t5-small"
