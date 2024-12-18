@@ -87,3 +87,11 @@ numeros = [1, 2, 3, 4, 5]
 print(primero)   # Output: 1
 print(mitad)  # Output: [2, 3, 4]
 print(ultimo)    # Output: 5
+
+# PREGUNTA 6 desempaquetar
+numeros = [1, 2, 3, 4, 5]
+
+# resultado:
+print(primero)   # Output: 1
+print(mitad)  # Output: [2, 3, 4]
+print(ultimo)    # Output: 5
