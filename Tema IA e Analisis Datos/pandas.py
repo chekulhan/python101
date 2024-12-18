@@ -32,3 +32,47 @@ lista = df.loc[:, "Edad"].to_list()
 
 # query como SQL
 df.query('Age > 30')
+
+
+---------------------------
+
+import numpy as np
+
+data = [
+    ['Alice', 25, 'New York'],
+    ['Bob', 30, 'Los Angeles'],
+    ['Charlie', np.nan, 'Chicago'],
+    [None, 40, 'Houston'],
+    ['David', 35, None],
+    ['David', 35, None]
+]
+
+# Column names specified separately
+columns = ['Nombre', 'Edad', 'Ciudad']
+
+# Creating the DataFrame
+df = pd.DataFrame(data, columns=columns)
+
+df.describe()
+df.shape
+
+df_sorted.drop(columns=["Estado"])
+
+df.isnull()
+df.Edad.isnull()
+
+# fillna
+mean_age = df['Edad'].mean()
+df_filled_mean = df['Edad'].fillna(mean_age)
+
+df.drop_duplicates()
+
+df_cleaned = df.dropna(subset=['Edad'])
+
+df_sorted = df.sort_values(by='Edad')
+
+df_sorted["Estado"] = "Activo"
+df_sorted['Status'] = df_sorted['Edad'].apply(lambda x: 'Activo' if x > 30 else None)
+
+
+
