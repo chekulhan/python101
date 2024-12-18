@@ -47,3 +47,27 @@ print(guerrero.atacar())  # Salida: Carlos ataca con fuerza de 30!
 print(mago.atacar())      # Salida: Luna lanza un hechizo de magia Fuego!
 print(arquero.atacar())   # Salida: Leo dispara una flecha! Flechas restantes: 4
 print(arquero.atacar())   # Salida: Leo dispara una flecha! Flechas restantes: 3
+
+
+PREGUNTA 2: 
+numbers = [1, 2, 3, 4, 5]
+
+# Using map with a lambda to double each number
+doubled_numbers = list(map(lambda x: x * 2, numbers))
+
+print(doubled_numbers)  # Output: [2, 4, 6, 8, 10]
+
+PREGUNTA 3:
+
+clientes = [
+    {"nombre": "Alice", "edad": 15},
+    {"nombre": "Bob", "edad": 35},
+    {"nombre": "Charlie", "edad": 13},
+    {"nombre": "David", "edad": 40}
+]
+
+# Using filter and lambda to find customers older than 30
+no_adultos = list(filter(lambda x: x["edad"] < 18, clientes))
+
+print(no_adultos)
+
