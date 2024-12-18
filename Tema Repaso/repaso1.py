@@ -59,4 +59,11 @@ clientes = [
     {"nombre": "David", "edad": 40}
 ]
 
-# PREGUNTA 4
+# PREGUNTA 4 desempaquetar
+
+persona = ("Alice", 25, "Engineer")
+
+# resultado:
+print(nombre)        
+print(edad)         
+print(rol)  
