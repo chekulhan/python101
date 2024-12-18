@@ -71,3 +71,11 @@ no_adultos = list(filter(lambda x: x["edad"] < 18, clientes))
 
 print(no_adultos)
 
+# PREGUNTA 4 desempaquetar
+
+persona = ("Alice", 25, "Engineer")
+nombre, edad, rol = persona
+# resultado:
+print(nombre)        
+print(edad)         
+print(rol)  
