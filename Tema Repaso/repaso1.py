@@ -1,3 +1,4 @@
+# PREGUNTA 1
 # Terminar las clases para Mago y Arquero
 
 class Personaje:
@@ -42,3 +43,20 @@ print(guerrero.atacar())  # Salida: Carlos ataca con fuerza de 30!
 print(mago.atacar())      # Salida: Luna lanza un hechizo de magia Fuego!
 print(arquero.atacar())   # Salida: Leo dispara una flecha! Flechas restantes: 4
 print(arquero.atacar())   # Salida: Leo dispara una flecha! Flechas restantes: 3
+
+
+# PREGUNTA 2 - map
+numeros = [1, 2, 3, 4, 5]
+# usando map, conseguir el siguiente output (resultado)
+Resultado: [2, 4, 6, 8, 10]
+
+# PREGUNTA 3
+# usar el comando filter para filtrar y presentar solo los clientes menos de edad (adulto)
+clientes = [
+    {"nombre": "Alice", "edad": 15},
+    {"nombre": "Bob", "edad": 35},
+    {"nombre": "Charlie", "edad": 13},
+    {"nombre": "David", "edad": 40}
+]
+
+# PREGUNTA 4
