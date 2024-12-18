@@ -67,3 +67,11 @@ persona = ("Alice", 25, "Engineer")
 print(nombre)        
 print(edad)         
 print(rol)  
+
+# PREGUNTA 6 list comprehension
+# Usando list comprehension...
+nombres = ["Ana", "Luis", "Carlos", "Maria", "Pedro"]
+
+print(primeras_letras)  # Salida: ['A', 'L', 'C', 'M', 'P']
+# avanzado: seleccionar solo los nombres de Luis, Carlos y Maria.
+
