@@ -39,6 +39,12 @@ df = df.pipe(NYValue, col='Ciudad', value='ABCD').pipe(addDefaultValue, col='col
 df.head()
 
 
+# Ejercicio: 
+# Agregar un tax rate y precio final al dataframe
+data = {
+    'Product': ['Laptop', 'Smartphone', 'Tablet', 'Headphones'],
+    'Price': [1000, 500, 300, 150]
+}
 
 
 # group by
@@ -54,3 +60,20 @@ def agregar_anos(years):
   return years + 2 
 
 df["Año"] = df["Año"].apply(agregar_anos).head()
+
+
+
+
+def addTax(df, tax_rate):
+  df["Tax"] = df["Price"] * (tax_rate)
+  return df
+
+def calculateFinalPrice(df):
+  df["FinalPrice"] = df["Price"] + df["Tax"]
+  df["FinalPrice"] = df["FinalPrice"].apply(lambda x: f"${x:,.2f}") # format to currency
+  return df
+
+df = addTax(df, .12) # apply 12 % tax
+df = calculateFinalPrice(df) # calculate final price
+
+df.pipe(addTax, .12).pipe(calculateFinalPrice).head()
