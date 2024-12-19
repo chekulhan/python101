@@ -41,6 +41,12 @@ df.head()
 
 
 
+# group by
+df_grouped = df.groupby('Ciudad')['Año'].agg('sum').reset_index()
+
+df_grouped = df.groupby('Ciudad')['Año'].agg(['sum', 'mean', 'count']).reset_index()
+df_grouped.head()
+
 
 
 # Respuestas
