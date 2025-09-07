@@ -1,4 +1,49 @@
+"""
+# Actividad 1: ZARA
+En la tienda de Zara, el precio de una camiseta es de 10,50 € y el precio de un pantalón es de 3,00 €.
+
+Escribe un programa en Python que:
+- Pregunte al usuario cuántas camisetas quiere comprar.
+- Pregunte al usuario cuántos pantalones quiere comprar.
+
+Calcule el costo total de la compra multiplicando las cantidades por sus respectivos precios.
+
+Muestre en pantalla el precio total de la compra.
+💡 Opcional: Muestra el resultado con dos decimales, por ejemplo:
+
+Ejemplo de ejecución:
+¿Cuántas camisetas quieres comprar? 2
+¿Cuántos pantalones quieres comprar? 3
+El total de la compra es: 30.00 €
+"""
+
+
+# Actividad 2: AMERICANO/A
+
+Un turista americano ha venido a pasar las vacaciones a España.
+Está acostumbrado a usar la escala Fahrenheit (°F) para medir la temperatura, pero en España se utiliza la escala Celsius (°C). 
+Ayudale con un programa de Python.
+---
+
+
 # Respuestas
+
+# Zara actividad
+camiseta = 10.5
+pantalon = 3.0
+
+c = int(input("¿Cuántas camisetas quieres comprar? "))
+total_shirts = c * camiseta
+
+c = int(input("¿Cuántos pantalones quieres comprar? "))
+total_pants = c * pantalon
+
+total_order = total_shirts + total_pants
+
+# Mostrar con 2 decimales
+print(f"El total de la compra es: {total_order:.2f} €")
+
+
 
 # formulario en colab para convertir Celsius a Fahrenheit y viceversa
 # @title Calculador de Productos {"run":"auto","form-width":"200px","display-mode":"form"}
