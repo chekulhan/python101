@@ -1,3 +1,26 @@
+
+# Actividades:
+
+## Actividad: Registro de clase
+
+Este programa sirve para registrar cuántos alumnos están presentes en clase.
+- Primero, se crea una lista con los nombres de los alumnos (nombres).
+- Luego, el programa recorre esa lista uno por uno y pregunta si cada alumno ha venido (y para sí, n para no).
+- Cada vez que la respuesta es y, se suma 1 al contador (counter).
+- Al final, el programa muestra en pantalla cuántos alumnos están presentes hoy.
+
+## Actividad: Cálculo e media de la clase
+Teniendo las siguientes notas de una evaluación de clase, ayudar el profesor con un programa para sacar la nota más baja, más alta y la media, 
+notas = [6, 4, 1, 10, 10, 7, 4]
+
+## Actividad: Lengua
+Los alumnos quieren saber si la letra es un vocal o no. Imprimir el booleano True si es un vocal y False si no lo es.
+  
+letras = ["a", "b", "e", "f", "o", "x", "c"]
+
+
+-------
+
 nombres= ['Arturo','Julio','Dani']
 
 counter = 0
